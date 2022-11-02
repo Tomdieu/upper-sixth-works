@@ -1,0 +1,301 @@
+program PQREV(input,output);
+uses crt;
+
+var
+selection: char;
+n:string;
+a,aa:real;
+e,ii,ss,i,i1,x,y,s: integer;
+ran,ans:longint;
+
+begin
+clrscr;
+textbackground(green);
+clrscr;
+textbackground(green);
+textcolor(white);
+readln;
+writeln('');
+writeln('');
+writeln('');
+writeln('');
+writeln('');
+writeln('');
+delay(50);
+clrscr;
+writeln('                !!                                                      !!  ');
+writeln('                !                                                        ! ');
+writeln('                !                   7-PROGRAMS                           !  ');
+writeln('                !                                                        ! ');
+writeln('                !                                                        ! ');
+writeln('                !!                                    copyright(2019)   !! ');
+delay(900);
+clrscr;
+writeln('                !!                                                      !!');
+writeln('                !                                                        !');
+writeln('                !                                                        !');
+writeln('                !                   sibemolx7@gmail.com                  !');
+writeln('                !                                                        !');
+writeln('                !!                                                      !!');
+delay(900);
+
+clrscr;
+writeln('                !!                                                      !!');
+writeln('                !                 ____________________________           ! ');
+writeln('                !                !                            !          ! ');
+writeln('                !                !           THE PQ           !          ! ');
+writeln('                !                !____________________________!          ! ');
+writeln('                !!                                                      !!  ');
+delay(900);
+clrscr;
+writeln('                !!                                                      !! ');
+writeln('                !                 ____________________________           ! ');
+writeln('                !                !                            !          ! ');
+writeln('                !                !       THE PHYSICS QUIZ     !          ! ');
+writeln('                !                !____________________________!          ! ');
+writeln('                !!                                                      !! ');
+delay(900);
+writeln(' HI student what is your Name? ');
+readln(n);
+writeln(' press enter to continue    ');
+readln;
+repeat
+begin
+clrscr;
+textbackground(red);
+clrscr;
+textbackground(red);
+TEXTCOLOR(white);
+writeln('                                                                Welcome ',n,'');
+writeln('                 _____________________________________________________________________  ');
+writeln('                !                      ____________________________                   ! ');
+writeln('                !                     !                            !                  ! ');
+writeln('                !                     !       THE PHYSICS QUIZ     !                  ! ');
+writeln('                !                     !____________________________!                  ! ');
+writeln('                !                                                                     ! ');
+writeln('                !                                                                     ! ');
+writeln('                !                                                                     ! ');
+writeln('                !                ---TITLES----                                        ! ');
+writeln('                !                                                                     ! ');
+writeln('                !  1- SIMPLE HARMONIC MOTION    9-Get started with a BRAIN            ! ');
+writeln('                !                                 BOX!!!                              ! ');
+writeln('                !  2- CIRCULAR MOTION                                                 ! ');
+writeln('                !                                                                     ! ');
+writeln('                !  3- FORCE                                                           ! ');
+writeln('                !                                                                     ! ');
+writeln('                !  4- WAVES                                                           ! ');
+writeln('                !                                                                     ! ');
+writeln('                !  5- MECHANICS                                                       ! ');
+writeln('                !                                                                     ! ');
+writeln('                !  6- HELP                                                            ! ');
+writeln('                !                                                                     ! ');
+writeln('                !  7- CREDITS                                                         ! ');
+Writeln('                !                                                                     ! ');
+writeln('                !  8- EXIT                                                            ! ');
+writeln('                !                                                                     ! ');
+writeln('                !                                                                     ! ');
+writeln('                !                                                       7-PROGRAMS    ! ');
+writeln('                !                                                                     ! ');
+writeln('                !                                          copyright(c)2019           ! ');
+writeln('                ! Enter your selection..                                              ! ');
+writeln('                !_____________________________________________________________________!');
+readln(selection);
+case selection of
+
+
+ '6': Begin
+     clrscr;
+writeln('                ----HELP----                            ');
+writeln('');
+writeln('      Please respect and follow the instructions given to ');
+writeln('                    you by this guide   ');
+writeln('');
+writeln('   - Press Enter first, and looking at the Menu enter your');
+writeln('  selection using the alphanumerical keypad.');
+writeln('');
+writeln('  - Our software is still under implementation and so the ');
+writeln('  help menu shall as well be implemented with time ');
+writeln('');
+writeln('                                            7- PROGRAMS ');
+writeln (' Press Enter ');
+readln;
+end;
+
+
+    '7': Begin
+       clrscr;
+writeln('          THE PHYSICS QUIZ ');
+writeln('');
+writeln('By: 7programs ');
+writeln('');
+writeln(' Main Programmer: Lontsi Anderson                           ');
+writeln('                                                                ');
+writeln(' Graphics:                         ********     *********                      ');
+writeln('                                   !        !   !       !                 ');
+writeln(' Sound: Kenmene Alex               ! _____  !   !       !              ');
+writeln('                                   *********    !       !                               ' );
+writeln(' General supervisor: Lontsi alex   !!           !       !                ');
+writeln('                                   !!           !_______!             ');
+writeln(' Producer: Kenmene Anderson        !!           *****\\**             ');
+writeln('');
+writeln('');
+writeln('         SPECIAL THANKS TO                                          ');
+writeln(' -IP tech ');
+writeln(' All my Friends and family members ');
+writeln('');
+writeln(' Press Enter to continue ');
+readln;
+end;
+'9':  BEGIN
+clrscr;
+ss:=0;
+
+   writeln('                     _____               ');
+   delay(900);
+   clrscr;
+   writeln('                     _____                _____');
+   delay(900);
+   clrscr;
+   writeln('                     _____THE PQ BRAIN BOX_____');
+   readln;
+writeln('                                        ');
+writeln('           WELCOME ',n,' ');
+writeln(' press enter');
+readln;
+clrscr;
+ writeln(' Try to recall all the numbers that may appear and rewrite');
+ writeln('them after the count down. Ready?');
+ writeln('');
+ writeln('press enter ');
+ readln;
+ begin
+clrscr;
+textcolor(WHITE);
+repeat
+ii:=1;
+begin
+clrscr;
+begin
+Randomize;
+  ran:=random(1000000);
+end;
+ begin
+ repeat
+ gotoxy(30,10);
+ writeln('                  score:',ss);
+ writeln('',ran,'');
+ writeln('',ii,'');
+ delay(300);
+ ii:=ii+1;
+ clrscr;
+ until
+ ii=11;
+ end;
+ clrscr;
+ writeln(' WHAT ARE THE FIGURES WHICH JUST APPEARED?');
+ readln(ans);
+ if ans=(ran) then
+ begin
+ writeln(' GOOD ');
+ ss:=ss+1;
+ readln;
+ end
+ else
+ begin
+ writeln(' hmmm NO ');
+ writeln('        The Number was :',ran,'');
+ readln;
+ end;
+ clrscr;
+ writeln(' 1:Retry  0:Exit ');
+ writeln('                      SCORE:',ss,'');
+ readln(e);
+ end;
+ until
+ e=0;
+ textbackground(green);
+ clrscr;
+ textbackground(green);
+ end;
+ end;
+
+
+
+
+
+   '1':Begin
+           clrscr;
+ begin
+   randomize;
+   x:=random(30);
+
+   randomize;
+   y:=random(10);
+   readln;
+end;
+s:=0;
+writeln(' READY?');
+writeln('                       press enter ');
+readln;
+ clrscr;
+writeln('                                        SCORE:',s,'');
+writeln('1-An objet moving round a horizontal circle of radius r,',Y,'m with a ');
+writeln(' velocity v, of ',X,'ms-1. What is its angular velocity w?');
+writeln(' ');
+writeln(' press enter, solve the question and write your answer');
+readln;
+a:= X/Y;
+begin
+ readln(aa);
+readln;
+if (aa)=(a) then
+begin
+s:=s+1;
+ writeln(' GOOD ',n,'')
+end
+else
+writeln(' HMM NO, the answer is',a,'rads-1 ');
+
+readln;
+
+  clrscr;
+writeln('                                        SCORE:',s,'');
+writeln('2-A boomrang follows a circular path of radius',y,'m and  ');
+writeln(' has an angular velocity of ',x,'ms-1. what is the radius');
+writeln(' of the circular path John created while trowing the ');
+writeln(' boomrang?');
+writeln(' ');
+writeln(' press enter, solve the question and enter your answer');
+readln;
+a:=x*y;
+readln(aa);
+readln;
+if
+(aa)=(a) then
+begin
+writeln(' GOOD ',n,'');
+s:=s+1;
+end
+else
+writeln(' HMM NO ');
+readln;
+readln;
+end;
+end;
+ELSE
+ begin
+writeln(' Sorry our software is still under investigation');
+writeln(' you can get the finish app in google');
+readln;
+end;
+end;
+end;
+
+
+
+UNTIL  (selection='8') or (selection='8');
+writeln('         THANKS FOR USING OUR SOFTWARE ');
+writeln(' press enter to exit ');
+readln;
+END.
+

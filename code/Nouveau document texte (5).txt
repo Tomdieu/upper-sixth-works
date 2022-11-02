@@ -1,0 +1,25 @@
+consolappsgraphics
+#include<stdio.h>
+#include<conio.h>
+#include<windows.h>
+void gotoxy(short x, short y);    //here we declare the gotoxy function//
+main()
+{
+ gotoxy(30,16);                      //now where we want to call  gotoxy function //
+ printf("Hi i am,here");
+ return 0;
+}
+void gotoxy(short x, short y)           //definition of gotoxy function//                                               
+{
+ COORD pos ={x,y};
+ SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+}
+#include <windows.h>
+
+void gotoxy(int x, int y)
+{
+COORD coord;
+coord.X = x;
+coord.Y = y;
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_H ANDLE), coord);
+}

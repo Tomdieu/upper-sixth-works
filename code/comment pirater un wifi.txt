@@ -1,0 +1,7 @@
+comment  pirater un reseau local wifi
+pour prater un wifi taper ( windows + R ) une page executer va safficher execter puis entre cmd
+1).netsh
+2).wlan
+3).show networks mode = ssid
+4).show profile
+5).show profile name = " nom du wifi " key=clear
